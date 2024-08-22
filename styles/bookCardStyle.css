@@ -1,0 +1,69 @@
+.book_Cards{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(13, 99, 123);
+    border-radius: 16px;
+    width: 32vw;
+    color: white;
+  }
+  
+.book_Cards img{
+    margin: 16px 0 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+  }
+.price_likes_Container{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 16px 0 16px 0;
+
+.book_Price{
+    display: flex;
+    color: rgb(163, 34, 34);
+    font-weight: 600;
+    font-size: large;
+    align-items: center;
+    }
+.likes{
+    font-size: large;
+    }
+.likes svg{
+    height: 24px;
+    width: auto;
+    color: rgb(163, 34, 34);
+}
+.likes svg:hover{
+    cursor: pointer;
+}
+.likes p {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+}
+
+
+p{
+    display: flex;
+    font-family: 'Raleway';
+    align-items: center;
+  }
+  
+
+.book_Cards_h2_Container{
+    margin: 8px;
+    font-family: "Raleway_Italic";
+  }
+
+.book_Cards_Img_Container{
+    padding: 0 45% 0 45%;
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+  }
