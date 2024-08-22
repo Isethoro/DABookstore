@@ -1,5 +1,29 @@
 @font-face {
     font-family: "Raleway";
-    src: url('Fonts/Raleway-VariableFont_wght.ttf');
+    src: url("Fonts/Raleway-VariableFont_wght.ttf");
+    font-family: "Raleway_Italic";
+    src: url("Fonts/Raleway-Italic-VariableFont_wght.ttf");
     font-weight: 400;
   }
+
+#main_container{
+  width: 100%;
+  background-color: rgb(31, 48, 74);
+}
+
+h1{
+  font-family: 'Raleway';
+  margin: 8px;
+}
+
+p{
+  font-family: 'Raleway';
+  margin: 8px;
+}
+
+.top_section{
+  display: flex;
+  align-items: center;
+  margin: 0 160px 0 160px;
+  color: white;
+}
