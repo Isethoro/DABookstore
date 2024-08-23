@@ -16,6 +16,11 @@ h1{
   margin: 8px;
 }
 
+.top_section p{
+  font-family: 'Raleway';
+  margin: 8px;
+}
+
 .top_section{
   display: flex;
   align-items: center;
