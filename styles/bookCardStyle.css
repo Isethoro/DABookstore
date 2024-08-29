@@ -73,3 +73,18 @@ p{
 .book_description_container p{
   font-family: 'Raleway_Italic';
 }
+
+.comment_section{
+  font-family: 'Raleway_Italic';
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+}
+.comment{
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  gap: 24px;
+  font-family: 'Raleway_Italic';
+  margin: 8px;
+}

@@ -1,4 +1,4 @@
-// Needed:
+
 let books = [
   {
     name: "Die Geheimnisse des Ozeans",
@@ -200,6 +200,16 @@ function renderBooks() {
 
   for (let indexBook = 0; indexBook < books.length; indexBook++) {
     bookRef.innerHTML += getBookTemplate(indexBook);
+    renderComments(indexBook);
+  }
+}
+
+function renderComments(indexBook){
+  let commentRef = document.getElementById("comment_window" + indexBook)
+  commentRef.innerHTML = "";
+  
+  for (let indexComment = 0; indexComment < books[indexBook].comments.length; indexComment++){
+    commentRef.innerHTML += getCommentTemplate(indexBook, indexComment);
   }
 }
 
