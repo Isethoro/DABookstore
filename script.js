@@ -205,8 +205,7 @@ function renderBooks() {
 }
 
 function renderComments(indexBook){
-  let commentRef = document.getElementById("comment_window" + indexBook)
-  commentRef.innerHTML = "";
+  let commentRef = document.getElementById("comment_window" + indexBook);
   
   for (let indexComment = 0; indexComment < books[indexBook].comments.length; indexComment++){
     commentRef.innerHTML += getCommentTemplate(indexBook, indexComment);
@@ -241,6 +240,19 @@ function reduceLikes(indexBook) {
 }
 
 // Commentfunktion
-// Where to Display comments
-// load comments from object
 // add new comment
+
+function renderNewComment(indexBook){
+  let commentRef = document.getElementById("comment_window" + indexBook)
+  commentRef.innerHTML = "";
+
+  getComment(indexBook);
+  commentRef.innerHTML = newComment;
+
+  renderComments(indexBook);
+}
+
+function getComment(indexBook){
+  let inputRef = document.getElementById("comment_input" + indexBook).value;
+  return newComment = '<tr class = "comment"><td><p class = "comment_name" id = "comment_name${indexComment}">[Kevin] : </p></td><td><p class = "comment_text" id = "comment_text${indexComment}">'+ inputRef + '</p></td></tr>';
+}

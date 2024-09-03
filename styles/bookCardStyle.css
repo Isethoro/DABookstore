@@ -5,8 +5,8 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(13, 99, 123);
-    border-radius: 16px;
-    width: 32vw;
+    border-radius: 8px;
+    width: 42vw;
     color: white;
   }
   
@@ -67,7 +67,9 @@ p{
 .book_description_container{
   display: flex;
   justify-content: space-between;
-  gap: 8px;
+  padding: 40px;
+  width: 100%;
+  border-bottom: solid 2px;
 }
 
 .book_description_container p{
@@ -79,12 +81,24 @@ p{
   display: flex;
   flex-direction: column;
   margin: 8px;
+  border-bottom: solid 2px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
+
+.comment_section td{
+  width: 50%;
+}
+
 .comment{
-  display: flex;
-  justify-content: space-between;
-  width: fit-content;
+  display: block;
   gap: 24px;
   font-family: 'Raleway_Italic';
   margin: 8px;
+}
+
+.comment_name{
+    white-space: nowrap;
 }
